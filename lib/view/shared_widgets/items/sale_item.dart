@@ -53,7 +53,9 @@ class SaleItem extends StatelessWidget {
       }
     }
 
-    ratingDrawer(rating);
+    if (rating != null) {
+      ratingDrawer(rating);
+    }
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -84,7 +86,8 @@ class SaleItem extends StatelessWidget {
                         .bodyTextNormalBold
                         .copyWith(color: AppColors.neutralDark)),
                 if (isGrid) Row(children: stars),
-                Text('\$${actualCost - (actualCost - discount / 100)}',
+                Text(
+                    '\$${(actualCost - (actualCost * discount ~/ 100)).round()}',
                     textAlign: TextAlign.left,
                     style: const AppTextStyles()
                         .bodyTextNormalRegular
