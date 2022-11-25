@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../managers/text_styles_manager.dart';
+import '../../resources/text_styles_manager.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({Key? key}) : super(key: key);

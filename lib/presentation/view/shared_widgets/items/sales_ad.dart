@@ -1,8 +1,8 @@
-import 'package:ecommerce_flutter/presentation/managers/values_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../../../managers/colors_manager.dart';
-import '../../../managers/text_styles_manager.dart';
+import '../../../resources/colors_manager.dart';
+import '../../../resources/text_styles_manager.dart';
+import '../../../resources/values_manager.dart';
 import 'numeric_clock.dart';
 
 class SaleAd extends StatelessWidget {

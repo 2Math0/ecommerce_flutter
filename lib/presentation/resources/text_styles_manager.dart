@@ -1,4 +1,4 @@
-import 'package:ecommerce_flutter/presentation/managers/values_manager.dart';
+import 'package:ecommerce_flutter/presentation/resources/values_manager.dart';
 import 'package:flutter/material.dart';
 
 class AppTextStyles {
