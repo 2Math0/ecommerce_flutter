@@ -1,7 +1,8 @@
+import 'package:ecommerce_flutter/presentation/managers/values_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../../../constants/const_colors.dart';
-import '../../../constants/const_text_styles.dart';
+import '../../../presentation/managers/colors_manager.dart';
+import '../../../presentation/managers/text_styles_manager.dart';
 import 'numeric_clock.dart';
 
 class SaleAd extends StatelessWidget {
@@ -28,13 +29,14 @@ class SaleAd extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppCircularRadius.cr5)),
         child: Stack(children: [
           Image.asset(
             bgImagePath,
             fit: BoxFit.fill,
           ),
-          SizedBox(height: size.height / 4, child: widget)
+          SizedBox(height: size.height / AppSize.s4, child: widget)
         ]));
   }
 }
@@ -109,7 +111,7 @@ class _SaleAdClockState extends State<SaleAdClock> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      padding: const EdgeInsets.symmetric(horizontal: AppPadding.p16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -144,9 +146,9 @@ class RecommendationTexts extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(AppPadding.p16),
       child: SizedBox(
-        height: size.height / 4,
+        height: size.height / AppSize.s4,
         child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,

@@ -1,7 +1,8 @@
+import 'package:ecommerce_flutter/presentation/managers/values_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
-import '../../constants/const_colors.dart';
+import '../../presentation/managers/colors_manager.dart';
 import '../shared_widgets/bars/search_bar.dart';
 import '../shared_widgets/bars/see_more_bar.dart';
 import '../shared_widgets/items/category_Item.dart';
@@ -80,7 +81,7 @@ class HomePage extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          const SizedBox(height: 24),
+          const SizedBox(height: AppMargin.m24),
           // Header Bar
           Row(
             children: [
@@ -93,14 +94,14 @@ class HomePage extends StatelessWidget {
               IconButton(
                   onPressed: () {},
                   icon: const Icon(Icons.favorite_outline_rounded,
-                      color: AppColors.neutralGrey, size: 30)),
+                      color: AppColors.neutralGrey, size: AppSize.s30)),
               IconButton(
                   onPressed: () {},
                   icon: const Icon(Icons.notifications_outlined,
-                      color: AppColors.neutralGrey, size: 30)),
+                      color: AppColors.neutralGrey, size: AppSize.s30)),
             ],
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: AppMargin.m24),
 
           // Image Slide show makes a beautiful auto player for any types of list
           ImageSlideshow(
@@ -146,7 +147,7 @@ class HomePage extends StatelessWidget {
           ),
 
           //Flash Sale
-          const SizedBox(height: 24),
+          const SizedBox(height: AppMargin.m24),
           SeeMoreBar(onTap: () {}, title: 'Flash Sale'),
           SizedBox(
             height: 250,
@@ -165,7 +166,7 @@ class HomePage extends StatelessWidget {
           ),
 
           //Mega Sale
-          const SizedBox(height: 24),
+          const SizedBox(height: AppMargin.m24),
           SeeMoreBar(onTap: () {}, title: 'Mega Sale'),
           SizedBox(
             height: 250,
@@ -188,7 +189,7 @@ class HomePage extends StatelessWidget {
                 title: 'Recommended Product',
                 subtitle: 'We recommend the best for you',
               )),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppMargin.m8),
           //Grid Products
           GridView.builder(
             shrinkWrap: true,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../constants/const_text_styles.dart';
+import '../../presentation/managers/text_styles_manager.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({Key? key}) : super(key: key);
