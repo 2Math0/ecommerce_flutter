@@ -1,7 +1,7 @@
+import 'package:ecommerce_flutter/presentation/resources/theme_manager.dart';
 import 'package:ecommerce_flutter/presentation/view/parent_bottom_nav.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -16,9 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'E commerce',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
-          primarySwatch: Colors.blue),
+      theme: getApplicationTheme(),
       home: const MarketParent(),
     );
   }

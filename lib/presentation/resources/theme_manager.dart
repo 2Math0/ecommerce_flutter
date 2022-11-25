@@ -2,12 +2,14 @@ import 'package:ecommerce_flutter/presentation/resources/colors_manager.dart';
 import 'package:ecommerce_flutter/presentation/resources/text_styles_manager.dart';
 import 'package:ecommerce_flutter/presentation/resources/values_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
       // main colors of the app
       primaryColor: AppColors.primaryBlue,
       disabledColor: AppColors.neutralGrey,
+
       // ripple color
       // splashColor:
       // will be used in case of disabled button for example
@@ -40,6 +42,9 @@ ThemeData getApplicationTheme() {
               // primary: AppColors.primaryBlue, // deprecated
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(AppSize.s12)))),
+
+      // default font family
+      fontFamily: GoogleFonts.poppins().fontFamily,
 
       // Text theme
       textTheme: TextTheme(
