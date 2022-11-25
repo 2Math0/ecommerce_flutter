@@ -2,7 +2,7 @@ import 'package:ecommerce_flutter/presentation/managers/values_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
-import '../../presentation/managers/colors_manager.dart';
+import '../../managers/colors_manager.dart';
 import '../shared_widgets/bars/search_bar.dart';
 import '../shared_widgets/bars/see_more_bar.dart';
 import '../shared_widgets/items/category_Item.dart';

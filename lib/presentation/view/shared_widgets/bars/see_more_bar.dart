@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../presentation/managers/colors_manager.dart';
-import '../../../presentation/managers/text_styles_manager.dart';
+import '../../../managers/colors_manager.dart';
+import '../../../managers/text_styles_manager.dart';
 
 class SeeMoreBar extends StatelessWidget {
   /// This Widget takes all width available

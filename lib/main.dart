@@ -1,4 +1,4 @@
-import 'package:ecommerce_flutter/view/parent_bottom_nav.dart';
+import 'package:ecommerce_flutter/presentation/view/parent_bottom_nav.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';

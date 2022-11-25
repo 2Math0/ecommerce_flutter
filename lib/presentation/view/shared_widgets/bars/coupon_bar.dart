@@ -1,8 +1,8 @@
 import 'package:ecommerce_flutter/presentation/managers/values_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../../../presentation/managers/colors_manager.dart';
-import '../../../presentation/managers/text_styles_manager.dart';
+import '../../../managers/colors_manager.dart';
+import '../../../managers/text_styles_manager.dart';
 
 class CouponBar extends StatelessWidget {
   /// Bar item that contains a text and background color

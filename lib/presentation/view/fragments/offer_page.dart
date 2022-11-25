@@ -1,8 +1,8 @@
-import 'package:ecommerce_flutter/view/shared_widgets/header_padding.dart';
-import 'package:ecommerce_flutter/view/shared_widgets/items/sales_ad.dart';
 import 'package:flutter/material.dart';
 
 import '../shared_widgets/bars/coupon_bar.dart';
+import '../shared_widgets/header_padding.dart';
+import '../shared_widgets/items/sales_ad.dart';
 import '../shared_widgets/text_header.dart';
 
 class OfferPage extends StatelessWidget {
