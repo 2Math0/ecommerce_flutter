@@ -16,7 +16,9 @@ class OfferPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const <Widget>[
           HeaderPadding(widget: TextHeader(text: 'Offer')),
-          CouponBar(message: 'Use “MEGSL” Coupon For Get 90%off'),
+          CouponBar(
+              message:
+                  'Use “MEGSL” Coupon For Get 90%off'), // ToDo add Api call that create that coupon
           SizedBox(height: 24),
           SaleAd(
             bgImagePath: 'assets/images/Promotion Image/image 50.png',
@@ -27,7 +29,8 @@ class OfferPage extends StatelessWidget {
           SaleAd(
               bgImagePath: 'assets/images/Promotion Image/image 51.png',
               widget: RecommendationTexts(
-                  title: '90% Off Super Mega Sale',
+                  title:
+                      '90% Off Super Mega Sale', // ToDo add Api call that create Sale Ad Widget
                   subtitle: 'Special birthday gift for you')),
           SizedBox(height: 24),
         ],

@@ -1,3 +1,4 @@
+import 'package:ecommerce_flutter/presentation/resources/strings_manager.dart';
 import 'package:flutter/material.dart';
 
 import '../../../resources/colors_manager.dart';
@@ -32,7 +33,7 @@ class SearchBar extends StatelessWidget {
                 borderRadius: BorderRadius.circular(AppCircularRadius.cr5),
                 borderSide: const BorderSide(color: Colors.transparent)),
             isDense: true,
-            hintText: "Search Product",
+            hintText: AppStrings.searchProduct,
             prefixIcon: const Icon(Icons.search, size: AppSize.s24),
           )),
     );

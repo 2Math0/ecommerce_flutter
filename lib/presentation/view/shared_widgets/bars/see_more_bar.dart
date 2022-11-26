@@ -1,3 +1,4 @@
+import 'package:ecommerce_flutter/presentation/resources/strings_manager.dart';
 import 'package:flutter/material.dart';
 
 import '../../../resources/colors_manager.dart';
@@ -18,7 +19,7 @@ class SeeMoreBar extends StatelessWidget {
   const SeeMoreBar({
     Key? key,
     required this.title,
-    this.txtButton = 'See More',
+    this.txtButton = AppStrings.seeMore,
     required this.onTap,
   }) : super(key: key);
 

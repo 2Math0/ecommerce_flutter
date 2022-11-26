@@ -6,6 +6,7 @@ class AppMargin {
   static const double m20 = 20.0;
   static const double m24 = 24.0;
   static const double m32 = 32.0;
+  static const double m48 = 48.0;
 }
 
 class AppPadding {

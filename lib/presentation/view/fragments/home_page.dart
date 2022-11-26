@@ -1,3 +1,4 @@
+import 'package:ecommerce_flutter/presentation/resources/strings_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
@@ -115,6 +116,7 @@ class HomePage extends StatelessWidget {
             isLoop: true,
             children: [
               const SaleAd(
+                  // Todo Add Api call that create sale Ad
                   bgImagePath: 'assets/images/Promotion Image/image 50.png',
                   widget: SaleAdClock(
                       seconds: 30000,
@@ -132,7 +134,9 @@ class HomePage extends StatelessWidget {
           ),
           //Categories
           SeeMoreBar(
-              onTap: () {}, title: 'Category', txtButton: 'More Category'),
+              onTap: () {},
+              title: AppStrings.category,
+              txtButton: AppStrings.moreCategory),
           SizedBox(
             height: 120,
             child: ListView.builder(
@@ -148,7 +152,7 @@ class HomePage extends StatelessWidget {
 
           //Flash Sale
           const SizedBox(height: AppMargin.m24),
-          SeeMoreBar(onTap: () {}, title: 'Flash Sale'),
+          SeeMoreBar(onTap: () {}, title: AppStrings.flashSale),
           SizedBox(
             height: 250,
             child: ListView.builder(
@@ -158,6 +162,7 @@ class HomePage extends StatelessWidget {
                 // display each item of the product list
                 itemBuilder: (BuildContext context, int index) {
                   return SaleItem(
+                      // ToDo Add Api call that create flash sales List
                       imagePath: sales[index]['image'],
                       actualCost: sales[index]['actual_cost'],
                       discount: sales[index]['discount'],
@@ -167,7 +172,7 @@ class HomePage extends StatelessWidget {
 
           //Mega Sale
           const SizedBox(height: AppMargin.m24),
-          SeeMoreBar(onTap: () {}, title: 'Mega Sale'),
+          SeeMoreBar(onTap: () {}, title: AppStrings.megaSale),
           SizedBox(
             height: 250,
             child: ListView.builder(
@@ -177,6 +182,7 @@ class HomePage extends StatelessWidget {
                 // display each item of the product list
                 itemBuilder: (BuildContext context, int index) {
                   return SaleItem(
+                      // ToDo Add Api call that creates Mega Sale List
                       imagePath: sales[index]['image'],
                       actualCost: sales[index]['actual_cost'],
                       discount: sales[index]['discount'],
@@ -184,6 +190,7 @@ class HomePage extends StatelessWidget {
                 }),
           ),
           const SaleAd(
+              // ToDo Add Api call that creates Sale AD
               bgImagePath: 'assets/images/Promotion Image/image 51.png',
               widget: RecommendationTexts(
                 title: 'Recommended Product',
@@ -192,6 +199,7 @@ class HomePage extends StatelessWidget {
           const SizedBox(height: AppMargin.m8),
           //Grid Products
           GridView.builder(
+            // ToDo add Api call that creates Sales Item Grid list
             shrinkWrap: true,
             itemCount: sales.length,
             physics: const NeverScrollableScrollPhysics(),

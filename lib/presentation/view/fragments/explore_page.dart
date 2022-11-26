@@ -1,3 +1,4 @@
+import 'package:ecommerce_flutter/presentation/resources/strings_manager.dart';
 import 'package:flutter/material.dart';
 
 import '../../resources/text_styles_manager.dart';
@@ -8,7 +9,8 @@ class ExplorePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Explore Page', style: const AppTextStyles().headingH1),
+      child:
+          Text(AppStrings.explorePage, style: const AppTextStyles().headingH1),
     );
   }
 }
