@@ -1,3 +1,4 @@
+import 'package:ecommerce_flutter/presentation/resources/assets_manager.dart';
 import 'package:ecommerce_flutter/presentation/resources/strings_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
@@ -62,19 +63,19 @@ class HomePage extends StatelessWidget {
   ];
 
   final List<List<String>> categories = [
-    ['Bikini', 'assets/icons/Product_icon/24px/bikini.png'],
-    ['Dress', 'assets/icons/Product_icon/24px/dress.png'],
-    ['Man Bag', 'assets/icons/Product_icon/24px/man bag.png'],
-    ['Man Pants', 'assets/icons/Product_icon/24px/man pants.png'],
-    ['Man Shoes', 'assets/icons/Product_icon/24px/man shoes.png'],
-    ['Man Underwear', 'assets/icons/Product_icon/24px/man underwear.png'],
-    ['Shirt', 'assets/icons/Product_icon/24px/shirt.png'],
-    ['Skirt', 'assets/icons/Product_icon/24px/skirt.png'],
-    ['T-shirt', 'assets/icons/Product_icon/24px/Tshirt.png'],
-    ['Woman Bag', 'assets/icons/Product_icon/24px/woman bag.png'],
-    ['Woman Pants', 'assets/icons/Product_icon/24px/woman pants.png'],
-    ['Woman Shoes', 'assets/icons/Product_icon/24px/woman shoes.png'],
-    ['Woman T-shirt', 'assets/icons/Product_icon/24px/woman tshirt.png'],
+    ['Bikini', ProductIcon.bikiniProductIcon],
+    ['Dress', ProductIcon.dressProductIcon],
+    ['Man Bag', ProductIcon.manBagProductIcon],
+    ['Man Pants', ProductIcon.manPantsProductIcon],
+    ['Man Shoes', ProductIcon.manShoesProductIcon],
+    ['Man Underwear', ProductIcon.manUnderwearProductIcon],
+    ['Shirt', ProductIcon.shirtProductIcon],
+    ['Skirt', ProductIcon.skirtProductIcon],
+    ['T-shirt', ProductIcon.tshirtProductIcon],
+    ['Woman Bag', ProductIcon.womanBagProductIcon],
+    ['Woman Pants', ProductIcon.womanPantsProductIcon],
+    ['Woman Shoes', ProductIcon.womanShoesProductIcon],
+    ['Woman T-shirt', ProductIcon.womanTshirtProductIcon],
   ];
   @override
   Widget build(BuildContext context) {

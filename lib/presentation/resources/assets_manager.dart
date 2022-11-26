@@ -19,3 +19,24 @@ class ProductIcon {
   static const String womanTshirtProductIcon =
       '$PRODUCT_ICON_PATH/woman tshirt.png';
 }
+
+const String PRODUCT_IMAGE_PATH = 'assets/images/Products';
+
+class ProductImage {
+  static const String nikeYellowShoeImage = '$PRODUCT_IMAGE_PATH/image 46.png';
+  static const String nikeBlueShoeImage = '$PRODUCT_IMAGE_PATH/image 47.png';
+  static const String nikeColorfulShoeImage =
+      '$PRODUCT_IMAGE_PATH/image 48.png';
+  static const String nikeRedShoeImage = '$PRODUCT_IMAGE_PATH/image 49.png';
+  static const String womanRedBagImage = '$PRODUCT_IMAGE_PATH/image 52.png';
+  static const String womanBeigeBagImage = '$PRODUCT_IMAGE_PATH/image 53.png';
+  static const String womanBlackBagImage = '$PRODUCT_IMAGE_PATH/image 54.png';
+  static const String womanGreenBagImage = '$PRODUCT_IMAGE_PATH/image 55.png';
+}
+
+const String PROMOTION_IMAGE_PATH = 'assets/images/Promotion Image';
+
+class PromotionImage {
+  static const String redShoeImage = '$PROMOTION_IMAGE_PATH/image 50.png';
+  static const String whiteShoeImage = '$PROMOTION_IMAGE_PATH/image 51.png';
+}
