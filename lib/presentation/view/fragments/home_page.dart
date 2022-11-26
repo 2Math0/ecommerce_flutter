@@ -19,44 +19,44 @@ class HomePage extends StatelessWidget {
 
   final List<Map<String, dynamic>> sales = [
     {
-      'image': 'assets/images/Products/image 46.png',
+      'image': ProductImage.nikeYellowShoeImage,
       'name': 'FS - Nike Air Max 270 React...',
       'actual_cost': 534.33,
       'discount': 24,
     },
     {
-      'image': 'assets/images/Products/image 54.png',
+      'image': ProductImage.womanBlackBagImage,
       'name': 'FS - QUILTED MAXI CROS...',
       'actual_cost': 534.33,
       'discount': 24,
     },
     {
-      'image': 'assets/images/Products/image 49.png',
+      'image': ProductImage.nikeRedShoeImage,
       'name': 'FS - Nike Air Max 270 React...',
       'actual_cost': 534.33,
       'discount': 24,
     },
     {
-      'image': 'assets/images/Products/image 46.png',
+      'image': ProductImage.nikeYellowShoeImage,
       'name': 'FS - Nike Air Max 270 React...',
       'actual_cost': 534.33,
       'discount': 24,
     },
     {
-      'image': 'assets/images/Products/image 54.png',
+      'image': ProductImage.womanBlackBagImage,
       'name': 'FS - QUILTED MAXI CROS...',
       'actual_cost': 534.33,
       'discount': 24,
     },
     {
-      'image': 'assets/images/Products/image 49.png',
+      'image': ProductImage.nikeRedShoeImage,
       'name': 'FS - Nike Air Max 270 React...',
       'actual_cost': 534.33,
       'discount': 24,
     },
     {
-      'image': 'assets/images/Products/image 46.png',
-      'name': 'assets/images/Products/image 54.png',
+      'image': ProductImage.nikeYellowShoeImage,
+      'name': 'FS - Nike Air Max 270 React...',
       'actual_cost': 534.33,
       'discount': 24,
     },
@@ -118,17 +118,17 @@ class HomePage extends StatelessWidget {
             children: [
               const SaleAd(
                   // Todo Add Api call that create sale Ad
-                  bgImagePath: 'assets/images/Promotion Image/image 50.png',
+                  bgImagePath: PromotionImage.redShoeImage,
                   widget: SaleAdClock(
                       seconds: 30000,
                       saleName: 'Super Flash Sale',
                       discount: 50)),
               Image.asset(
-                'assets/images/Promotion Image/image 50.png',
+                PromotionImage.redShoeImage,
                 fit: BoxFit.fill,
               ),
               Image.asset(
-                'assets/images/Promotion Image/image 50.png',
+                PromotionImage.redShoeImage,
                 fit: BoxFit.fill,
               ),
             ],
@@ -192,7 +192,7 @@ class HomePage extends StatelessWidget {
           ),
           const SaleAd(
               // ToDo Add Api call that creates Sale AD
-              bgImagePath: 'assets/images/Promotion Image/image 51.png',
+              bgImagePath: PromotionImage.whiteShoeImage,
               widget: RecommendationTexts(
                 title: 'Recommended Product',
                 subtitle: 'We recommend the best for you',
