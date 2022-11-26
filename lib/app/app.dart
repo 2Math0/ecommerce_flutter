@@ -8,6 +8,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // onGenerateRoute: RouteGenerator.getRoute,
+      // initialRoute: Routes.splashRoute,
       title: 'E commerce',
       debugShowCheckedModeBanner: false,
       theme: getApplicationTheme(),
